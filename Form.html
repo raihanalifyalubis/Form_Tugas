@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<HTML>
+    <Head>
+        <title> Form</title>
+        <style type="text/css">
+        .merah{
+            background-color: lightcyan;
+        }
+        .tulisanbesar{
+            font-size:xx-large;
+        }
+        </style>
+    </Head>
+    <body>
+        <form method="POST" action="data.php" width="100">
+            <fieldset class="merah">
+                <legend class="tulisanbesar">Akun</legend>
+                <table align="left">
+               <tr align="left">
+                <th>
+                    <label for="Uname">Username</label>
+                </th>
+                <th>
+                    <input type="text" name="Username" id="Uname">
+                </th>
+                </tr>
+                <tr align="left">
+                    <th>
+                        <label for="Pass">Password</label>
+                    </th>
+                    <th>
+                        <input type="pass" name="Password" id="Pass">
+                    </th>
+                </tr>
+                <tr align="left">
+                <th>
+                    <label for="Cpass">Konfirmasi Password</label>
+                </th>
+                <th>
+                    <input type="pass" name="KonfirmasiPassword" id="Cpass">
+                </th>
+                </tr>
+                </table>
+                
+            </fieldset>
+            <fieldset class="merah" width="100">
+                <legend class="tulisanbesar">Data</legend>
+                <table align="left">
+                    <tr align="left">
+                        <th>
+                            <label for="Nama">Nama</label>
+                        </th>
+                        <th>
+                            <input type="text" name="Nama" id="Nama">
+                        </th>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                            <label for="JKelamin">Jenis Kelamin</label>
+                        </th>
+                        <tH>
+                            <input type="radio" name="JK" id="Jkelamin">Laki-Laki<br>
+                            <input type="radio" name="JK" id="JKelamin">Perempuan
+                        </th>
+                    </tr>
+                    <tr align="left">
+                        <th>
+                            <label for="Disukai">Informasi yang Disukai</label>
+                        </th>
+                        <th>
+                            <input type="checkbox" name="Kesukaan" id="Disukai">Olahraga<br>
+                            <input type="checkbox" name="Kesukaan" id="Disukai">Travelling<br>
+                            <input type="checkbox" name="Kesukaan" id="Disukai">Kesehatan<br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <textarea name="Prestasi" id="Prestasi" cols="30" rows="10">Masukkan Prestasi Anda Disini</textarea>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th align="left">
+                            <button type="submit">Daftar</button>
+                            <button type="reset">Reset</button>
+                        </th>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+
+</HTML>
